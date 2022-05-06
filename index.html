@@ -76,7 +76,25 @@ li {
 #matvarer {
 transform: scale(0.5);
 position: absolute;
-top: 0px;
+top: -200px;
+left: -400px;
+}
+#tilbudfarge {
+    width: 100px;
+    height: 100px;
+    background: #ffe338;
+    position: relative;
+    top:200px;
+    border-radius: 50%;
+    transform: scale(1.7)
+
+}
+.header {
+    position: relative;
+    color: darkblue;
+    top: 110px;
+    left: -5px;
+    text-decoration: none;
 }
 </style>
 </head>
@@ -112,10 +130,14 @@ top: 0px;
         <td><a href="#">Tilbud</a></td>
     </tr>
     
-
+   
     <div id="tekst">
+        <a href="https://meny.no/tema/nyheter/matnyheter-sommeren-2022/">
         <img id="matvarer" src="matvarer.png" alt="bilde som viser matvarer som er på tilbud">
-        <h1>hei</h1>
+        <div id="tilbudfarge"></div>
+        <h1 class="header">NYHET</h1>
+        </div>
+  
     </div>
 
 
