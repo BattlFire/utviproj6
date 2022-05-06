@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>meny</title>
+<style>
+#search {
+    position: absolute;
+    left: 240px;
+    top: 30px;
+    transform: scale(1.5)
+    }
+#bar {
+    width: 110%;
+    height: 90px;
+    background: red;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+#logo {
+position: fixed;
+left: 50px;
+top: 0px;
+color: white;
+transform: scale(1.3)
+}
+</style>
+</head>
+<body>
 
+        <div id="bar"></div>
+        <div id="logo"><h1>MENY</h1></div>
+    <div id="search"> <input type="text" id="myInput" onkeyup="ContactsearchFX()" placeholder="Søk her...">
+    <table id="myTable">
+        <tr>
+            <td><a href="#">Kjøttboller</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Kjøttkaker</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Pizza Pepperoni</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Pizza Sopp</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Bakevarer</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Tilbud</a></td>
+        </tr>
+        </div>
+
+
+    <script>
+            window.onload = function () {
+                var rows = document.querySelectorAll('tr:not(.header)');
+    
+                for (var i = 0; i < rows.length; i++) {
+                    rows[i].style.display = 'none';
+                }
+            }
+    
+            function ContactsearchFX() {
+                var input, filter, table, tr, td, i;
+    
+                input = document.getElementById("myInput");
+    
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+    
+                        }
+                    }
+                }
+    
+                var rows = document.querySelectorAll('tr:not(.header)');
+    
+                if (input.value.length == 0) {
+                    for (var i = 0; i < rows.length; i++) {
+                        rows[i].style.display = 'none';
+                    }
+                }
+            }
+        </script>
+</body>
+</html>
