@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="https://meny.no/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="https://meny.no/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../main.js"></script>
     <title>MENY | Sommerens Nyheter</title>
     <style>
     </style>
@@ -24,7 +25,7 @@
     </div>
     <div id="bar"></div>
     <div id="logo">
-        <h1>MENY</h1>
+        <h1 onClick="home()">MENY</h1>
     </div>
 
     <div class="divTekst">
@@ -68,67 +69,6 @@
                 Sweet jalapeñjo mustard og youhurtsaus med mynte og hvitløk.</strong> Det blir en smakfull grillsommer!
         </p>
     </div>
-
-    <div id="search"> <input type="text" id="myInput" onkeyup="ContactsearchFX()" placeholder="Søk her...">
-        <table id="myTable">
-            <tr>
-                <td><a href="#">Kjøttboller</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">Kjøttkaker</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">Pizza Pepperoni</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">Pizza Sopp</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">Bakevarer</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">Tilbud</a></td>
-            </tr>
-    </div>
-
-    <script>
-        window.onload = function () {
-            var rows = document.querySelectorAll('tr:not(.header)');
-
-            for (var i = 0; i < rows.length; i++) {
-                rows[i].style.display = 'none';
-            }
-        }
-
-        function ContactsearchFX() {
-            var input, filter, table, tr, td, i;
-
-            input = document.getElementById("myInput");
-
-            filter = input.value.toUpperCase();
-            table = document.getElementById("myTable");
-            tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-
-                    }
-                }
-            }
-
-            var rows = document.querySelectorAll('tr:not(.header)');
-
-            if (input.value.length == 0) {
-                for (var i = 0; i < rows.length; i++) {
-                    rows[i].style.display = 'none';
-                }
-            }
-        }
-    </script>
 </body>
 
 </html>
