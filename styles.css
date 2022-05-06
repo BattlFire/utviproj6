@@ -95,3 +95,23 @@ li {
     left: -5px;
     text-decoration: none;
 }
+
+.divTekst {
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    outline: dashed 1px black;
+}
+
+.divTekst p{
+    font-size: 25px;
+}
+.divTekst h2{
+    font-size: 35px;
+}
+.divTekst h1{
+    font-size: 45px;
+}
