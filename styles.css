@@ -1,13 +1,15 @@
 body {
     background: #fffafa;
 }
+
 #search {
     position: absolute;
     left: 240px;
     top: 30px;
     transform: scale(1.5);
     background: transparent;
-    }
+}
+
 /*
 #search:active {
     width: 100px;
@@ -20,6 +22,7 @@ body {
     height: 100px;
     background: blue;
 }
+
 #bar {
     width: 110%;
     height: 90px;
@@ -28,14 +31,16 @@ body {
     left: -10px;
     top: -10px;
 }
+
 #logo {
-position: fixed;
-left: 50px;
-top: 0px;
-color: white;
-transform: scale(1.3);
-background: transparent;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    color: white;
+    transform: scale(1.3);
+    background: transparent;
 }
+
 #nav {
     width: 110%;
     height: 90px;
@@ -45,40 +50,44 @@ background: transparent;
     top: 40px;
     box-shadow: 1px 1px 3px grey;
 }
+
 #tekst {
     position: absolute;
     top: 100px;
     left: 200px;
 }
+
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 10;
-  position: absolute;
-  top: 55px;
-  left: -20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    position: absolute;
+    top: 55px;
+    left: -20px;
 }
 
 li {
-  display: inline;
-  margin-left: 15px;
+    display: inline;
+    margin-left: 15px;
 }
+
 #matvarer {
-transform: scale(0.5);
-position: absolute;
-top: -200px;
-left: -400px;
+    transform: scale(0.5);
+    position: absolute;
+    top: -200px;
+    left: -400px;
 }
+
 #tilbudfarge {
     width: 100px;
     height: 100px;
     background: #ffe338;
     position: relative;
-    top:200px;
+    top: 200px;
     border-radius: 50%;
     transform: scale(1.7)
-
 }
+
 .header {
     position: relative;
     color: darkblue;
