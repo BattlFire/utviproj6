@@ -106,12 +106,14 @@ li {
     outline: dashed 1px black;
 }
 
-.divTekst p{
+.divTekst p {
     font-size: 25px;
 }
-.divTekst h2{
+
+.divTekst h2 {
     font-size: 35px;
 }
-.divTekst h1{
+
+.divTekst h1 {
     font-size: 45px;
 }
