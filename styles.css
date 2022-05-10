@@ -15,7 +15,55 @@ li {
     transform: scale(1.5);
     background: transparent;
 }
+.oppskrift {
+    outline: dashed 1px black;
+     
+}
+#lasagne {
+    position: relative;
+    bottom: 150px;
+}
 
+.left {
+    text-align: left;
+    margin-left: 100px;
+    position: relative;
+    top: 20px;
+    left: 5%;
+}
+
+.left-text {
+    text-align: left;
+    position: relative;
+    left: 50px;
+}
+.right {
+    text-align: right;
+    margin-right: 100px;
+    position: relative;
+    bottom: 20px;
+    right: 10%;
+}
+.right-text {
+    text-align: left;
+    position: relative;
+    bottom: 335px;
+    width: 45%;
+    left: 50%;
+}
+.right-text2 {
+    text-align: left;
+    position: relative;
+    bottom: 550px;
+    width: 45%;
+    left: 50%;
+}
+.mindre-text {
+    transform: scale(0.7);
+    position: relative;
+    left: -10%;
+
+}
 /*
 #search:active {
     width: 100px;
@@ -109,7 +157,7 @@ li {
     margin: auto;
     margin-top: 150px;
     text-align: center;
-    width: 50%;
+    width: 55%;
     height: auto;
     outline: dashed 1px black;
 }
